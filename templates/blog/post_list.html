@@ -1,65 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Aptcoder - android dev,web developer</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1">
-	<meta name="author" content="omilo samuel lawrence">
-	<style type="text/css">
-		.card{
-			width:50%;
-			border-radius: 10px;
-			border : 2px solid grey;
-			margin: 10px;
-		}
-		.card-body{
-			padding: 10px;
-			width: auto;
-		}
-		.card-header{
-			width: auto;
-			padding: 10px;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			
-		}
-		.author{
-			align-self: flex-end;
-		}
-		html{
-			font-size: 20px;
-		}
-		body{
-			padding: 20px;
-		}
-		.footer{
-			background-color: grey;
-			width:100%;
-		}
-		.tag{
-			display: inline-block;
-			padding: 3px;
-			margin: 3px;
-			background-color: blue;
-		}
-	</style>
-</head>
-<body>
-	{{posts}}
+
+{% extends "blog/base.html" %}
+
+{% block posts %}
+	<div class="col-md-8 col-12">
 	{% for post in posts %}
-	<div class="card">
-			<div class="card-header">
-				<h1>{{post.title}}</h1>
-				<h3 class="author">by {{post.author}}</h3>
-			</div>
-			<div class="card-body">
-				<p>{{post.content}}
-				</p>
-			</div>
-			<div class="footer">
-			</div>
+	<div class="card shadow mb-3">
+		<div class="card-body">
+				<h1 class="card-title">{{post.title}}</h1>
+				<h5 class="card-subtitle text-muted">by {{post.author}}</h5>
+				<hr>
+				<p class="card-text">{{post.content}}</p>
+				<button class="btn btn-primary btn-md">Read more</button>
+		</div>
+			
+			
 	</div>
 	{% endfor %}
-</body>
-</html>
+	</div>
+{% endblock %}
