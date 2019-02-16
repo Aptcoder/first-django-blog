@@ -3,8 +3,38 @@
 /*COVER*/
 .cover{
 	height: 45vh;
+	width: 100%;
 	
 }
+.arrow{
+	font-size: 200%;
+	color: rgba(66,139,202,0.4);
+	display:block;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	animation-name: arrow;
+	animation-duration:1s;
+	animation-iteration-count: infinite;
+}
+@keyframes arrow{
+	0%{
+		top:0;
+	}
+	50%{
+		top:10px;
+	}
+	100%{
+		top:0;
+}
+/*.box-cover{
+	position: relative;
+	top:15%;
+	left:10%;
+	color: white;
+	background-color: rgba(0,0,0,0.1);
+	padding: 20px;
+}*/
 .card h1{
 	margin-bottom: 5px;
 }
@@ -17,7 +47,7 @@ body{
 	line-height: 110%;
 }
 .card-title{
-	 font-family:  cursive;
+	 font-family: 'Karla', sans-serif;
 }
 
 button{
@@ -32,8 +62,4 @@ button{
 	border-bottom: 2px solid #d3d3d3;
 	padding: 0 10px;
 	box-shadow: 0 7px 10px rgba(211,211,211,0.6);
-}
-.navbar-brand{
-	margin:0;
-	padding: 0;
 }

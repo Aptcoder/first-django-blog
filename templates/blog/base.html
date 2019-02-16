@@ -9,6 +9,8 @@
 
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<!-- custom css -->
 	<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
 	<!-- google font karla -->
@@ -16,15 +18,29 @@
 	
 </head>
 <body>
-	<nav class="navbar">
-		<a class="navbar-brand" href="/">
-			<img class="brand-icon" src="{% static 'images/aptcoderlogo.jpg' %} " height="50px">
-			<span class="brand-name">Aptocder</span>
-		</a>
-
-	</nav>
-	<div class="jumbotron cover">
-		<h1 class="cover-title">Featured post </h1>
+	<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#"><img class="brand-icon" src="{% static 'images/aptcoderlogo.jpg' %} " height="50px">Aptcoder</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-c-icon"><i class="fas fa-bars"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav mx-auto">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Portfolio</a>
+      <a class="nav-item nav-link " href="#" >Blog</a>
+    </div>
+    <button class="btn btn-primary" type="button">contact me</button>
+  </div>
+</nav>
+	<div class=" jumbotron cover">
+		<h1 class="display-4">Hello, I'm samuel!</h1>
+  <p class="lead">I am a Software developer with a flare for solving problems,one line of code at a time</p>
+  <hr class="my-4">
+  <p>Have fun checking out my blog</p>
+  <a class="btn btn-outline-primary" href="#" role="button">Featured post</a>
+  <a class="btn btn-primary" href="#" role="button">contact me</a>
+  <span class="arrow"><i class="fas fa-arrow-down"></i></span>
+	</div>
 	</div>
 	<div class="container">
 	{{posts}}
