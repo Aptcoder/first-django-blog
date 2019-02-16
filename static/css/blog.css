@@ -1,0 +1,34 @@
+/*----CUSTOM CSS----*/
+
+/*COVER*/
+.cover{
+	height: 45vh;
+	
+}
+.card h1{
+	margin-bottom: 5px;
+}
+body{
+	font-family: 'Karla', sans-serif;
+}
+.card-text{
+	font-family: 'Karla', sans-serif;
+	font-size:120% ;
+	line-height: 140%;
+}
+.card-title{
+	 font-family:  cursive;
+}
+
+button{
+	font-size: 130%;
+}
+.navbar{
+	background-color: white;
+	margin: 10px;
+	/*border-top: 1px solid #d3d3d3;
+	border-bottom: : 1px solid #d3d3d3;*/
+	border-top:2px solid #d3d3d3 ;
+	border-bottom: 2px solid #d3d3d3;
+	padding: 0 10px;
+}
