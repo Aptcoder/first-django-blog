@@ -6,6 +6,14 @@
 	width: 100%;
 	
 }
+@media(max-width:576px){
+	.cover{
+		height:47vh;
+	}
+}
+h1{
+	margin-bottom: 3px;
+}
 .arrow{
 	font-size: 200%;
 	color: rgba(66,139,202,0.4);
@@ -27,14 +35,6 @@
 	100%{
 		top:0;
 }
-/*.box-cover{
-	position: relative;
-	top:15%;
-	left:10%;
-	color: white;
-	background-color: rgba(0,0,0,0.1);
-	padding: 20px;
-}*/
 .card h1{
 	margin-bottom: 5px;
 }
